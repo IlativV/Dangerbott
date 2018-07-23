@@ -9,7 +9,9 @@ async def on_ready():
     print(client.user.name)
     print('ist jetzt aktiv!')
     print('----------------')
-  
+    
+    
+@client.event
 async def on_message(message):
     if message.content.lower().startswith('!abo'):
         await client.send_message(message.channel, "Noch kein Abonnent ? Hier kannst du mich abonnieren : https://goo.gl/kHwHVN")
