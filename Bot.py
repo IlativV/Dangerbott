@@ -44,8 +44,6 @@ async def on_message(message):
 @client.async_event
 async def on_member_join(member):
     role = discord.utils.get(member.server.roles, id="397010173513826306")
-    await
-    client.add_roles(member, role)
-
+    await client.add_roles(member, role)
 
 client.run(os.getenv('TOKEN')
