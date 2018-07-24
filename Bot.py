@@ -20,7 +20,18 @@ async def on_message(message):
         await client.send_message(message.channel, "Hier gibt es Videos die dir gefallen könnten : https://goo.gl/8HUkBW")
     if message.content.lower().startswith('!abo'):
         await client.send_message(message.channel, "Noch kein Abonnent ? Hier kannst du mich abonnieren : https://goo.gl/kHwHVN")
-
+    if message.content.lower().startswith('!server'):
+        await client.send_message(message.channel, "Auf diesem Minecraft Server spiele ich gerade: https://unicacity.de Auf dem Server kommst du mit der 1.12 Version der Java Edition.")
+    if message.content.lower().startswith('!tp'):
+        await client.send_message(message.channel, "Mit diesem Texture Pack spiele ich zurzeit: http://bdcraft.net/")
+    if message.content.lower().startswith('!trinkgeld'):
+        await client.send_message(message.channel, "Hier kannst du mir etwas Trinkgeld geben: https://goo.gl/g2N4Vb")
+    if message.content.lower().startswith('!twitch'):
+        await client.send_message(message.channel, "Du schaust Livestreams lieber auf Twitch ? Hier ist der Link : https://goo.gl/5Kbc3m")
+    if message.content.lower().startswith('!twitter'):
+        await client.send_message(message.channel, "Hier ist meine Twitter Seite: https://twitter.com/DangerZockt")
+    if message.content.lower().startswith('!uploadplan'):
+        await client.send_message(message.channel, "Hier ist mein Uploadplan: https://goo.gl/eaJat8")
         
 @client.async_event
 async def on_member_join(member):
