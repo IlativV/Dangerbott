@@ -1,6 +1,9 @@
 import discord
+form discord.ext.commands import Bot
 from discord.ext import commands
 import asyncio
+import time
+import os
 
 client = discord.Client()
 
