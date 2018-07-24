@@ -32,6 +32,11 @@ async def on_message(message):
         await client.send_message(message.channel, "Hier ist meine Twitter Seite: https://twitter.com/DangerZockt")
     if message.content.lower().startswith('!uploadplan'):
         await client.send_message(message.channel, "Hier ist mein Uploadplan: https://goo.gl/eaJat8")
+    if message.content.lower().startswith('!commands'):
+        await client.send_message(message.channel, "Hier ist eine Liste aller Commands: https://goo.gl/doSQWH")
+    if message.content.lower().startswith('!facebook'):
+        await client.send_message(message.channel, "Hier ist meine Facebook Seite: https://goo.gl/35VuhR")
+        
         
 @client.async_event
 async def on_member_join(member):
