@@ -70,4 +70,4 @@ async def on_member_join(member):
     client.add_roles(member, role)
 
 
-client.run(os.getenv('TOKEN')
+client.run(os.getenv('TOKEN'))
