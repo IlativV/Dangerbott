@@ -32,7 +32,7 @@ async def on_message(message):
     if message.content.lower().startswith('!premium'):
         await
         client.send_message(message.channel,
-                            "Wenn du diesen Command "/geworben Y8DEEH70" auf dem UnicaCity Server eingibst, bekommst du 14 Tage Premium (auf UnicaCity) nachdem du Level 10 auf dem Server erreicht hast.")
+                            "Wenn du diesen Command '/geworben Y8DEEH70' auf dem UnicaCity Server eingibst, bekommst du 14 Tage Premium (auf UnicaCity) nachdem du Level 10 auf dem Server erreicht hast.")
     if message.content.lower().startswith('!server'):
         await
         client.send_message(message.channel,
