@@ -45,11 +45,6 @@ async def on_ready():
             if channel.name == 'bot':
         await client.send_message(client.get_channel('474317552936288277'), 'Hier ist ein Link womit du Freunde auf denn Danger Zockt Community Discord Server einladen kannst: https://discord.gg/qmzzm5y .')                                       
                     
-async def on_ready():
-    msg = 'Ready when you are :thumbsup:'
-    for server in client.servers:
-        for channel in server.channels:
-            if channel.name == 'general':
         
 @client.async_event
 async def on_member_join(member):
