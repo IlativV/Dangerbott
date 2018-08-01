@@ -33,12 +33,13 @@ async def on_message(message):
         await client.send_message(message.channel, "Hier ist meine Twitter Seite:`https://twitter.com/DangerZockt`")
     if message.content.lower().startswith('!uploadplan'):
         await client.send_message(message.channel, "Hier ist mein Uploadplan:`https://goo.gl/eaJat8`")
-    if message.content.lower().startswith('!commands'):
-        await client.send_message(message.channel, "Hier ist eine Liste aller Commands:`https://goo.gl/doSQWH`")
     if message.content.lower().startswith('!facebook'):
         await client.send_message(message.channel, "Hier ist meine Facebook Seite:`https://goo.gl/35VuhR`")
     if message.content.lower().startswith('!premium'):
         await client.send_message(message.channel, "Wenn du diesen Command `/geworben Y8DEEH70` auf dem UnicaCity Server eingibst, bekommst du 14 Tage Premium (auf UnicaCity) nachdem du Level 10 auf dem Server erreicht hast.")      
+      if message.content.lower().startswith('!commands'):
+        await client.send_message(message.channel, "`!abo` zeigt dir wo du Danger abonnieren kannst., `!einladung` gibt dir eine einladung, `!facebook` gibt dir den Link zur Facebook Seite von Danger ")
+                                                    
         
 @client.async_event
 async def on_member_join(member):
