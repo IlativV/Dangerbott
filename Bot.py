@@ -43,9 +43,9 @@ async def on_ready():
     for server in client.servers:
         for channel in server.channels:
             if channel.name == 'bot':
-        await client.send_message(channel, "Hier ist ein Link womit du Freunde auf denn Danger Zockt Community Discord Server einladen kannst: https://discord.gg/qmzzm5y .")                                       
+                await client.send_message(channel, "Hier ist ein Link womit du Freunde auf denn Danger Zockt Community Discord Server einladen kannst: https://discord.gg/qmzzm5y .")                                       
                     
-         await client.send_message(channel, msg)
+         #await client.send_message(channel, msg)
         
 @client.async_event
 async def on_member_join(member):
