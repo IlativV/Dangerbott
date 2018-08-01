@@ -38,7 +38,9 @@ async def on_message(message):
     if message.content.lower().startswith('!premium'):
         await client.send_message(message.channel, "Wenn du diesen Command `/geworben Y8DEEH70` auf dem UnicaCity Server eingibst, bekommst du 14 Tage Premium (auf UnicaCity) nachdem du Level 10 auf dem Server erreicht hast.")      
     if message.content.lower().startswith('!commands'):
-        await client.send_message(message.channel, "`!abo` zeigt dir wo du Danger abonnieren kannst., `!einladung` gibt dir eine einladung, `!facebook` gibt dir den Link zur Facebook Seite von Danger ")
+        await client.send_message(message.channel, "`!abo` zeigt dir wo du Danger abonnieren kannst.",
+                                                   "`!einladung` gibt dir eine einladung.", 
+                                                   "`!facebook` gibt dir den Link zur Facebook Seite von Danger.")
                                                     
         
 @client.async_event
