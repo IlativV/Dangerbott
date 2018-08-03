@@ -7,7 +7,6 @@ import os
 
 client = discord.Client()
 
-
 @client.event
 async def on_ready():
     print(client.user.name)
@@ -16,7 +15,7 @@ async def on_ready():
 
 
 @client.event
-async def on_message(message):
+async def on_message(message,message.channel, "bot"):
     if message.content.lower().startswith('!youtube'):
         await client.send_message(message.channel, "Hier gibt es Videos die dir gefallen könnten : https://goo.gl/8HUkBW")
     if message.content.lower().startswith('!abo'):
