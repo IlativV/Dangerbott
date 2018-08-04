@@ -15,9 +15,9 @@ async def on_ready():
 
 
 @bot.command(pass_context=True)
-async def lul(ctx):
-    if ctx.message.channel.id == "bot":
-        await client.send_message(message.channel, "Hier gibt es Videos die dir gefallen könnten : https://goo.gl/8HUkBW")
+async def bot(ctx):
+    if ctx.message.channel.id == "474317552936288277":
+         await client.send_message( "Hier gibt es Videos die dir gefallen könnten : https://goo.gl/8HUkBW")
         
 @client.async_event
 async def on_member_join(member):
