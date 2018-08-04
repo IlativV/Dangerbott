@@ -17,7 +17,7 @@ async def on_ready():
 @client.event
 async def on_message(message):
 #await client.send_message(message.channel, "bot")
-    if message.content.lower().startswith('!youtube') and discord.Object(id='474317552936288277') :
+    if message.content.lower().startswith('!youtube'):
         await client.send_message( "Hier gibt es Videos die dir gefallen könnten : https://goo.gl/8HUkBW")
     if message.content.lower().startswith('!abo'):
         await client.send_message(message.channel, "Noch kein Abonnent ? Hier kannst du mich abonnieren: https://goo.gl/kHwHVN")
