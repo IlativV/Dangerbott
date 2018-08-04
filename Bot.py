@@ -14,7 +14,7 @@ async def on_ready():
     print('----------------')
 
 
-@bot.command(pass_context=True)
+@bot.command(pass_context=True,message)
 async def bot(ctx):
     if ctx.message.channel.id == "474317552936288277":
           if message.content.lower().startswith('!youtube'):
