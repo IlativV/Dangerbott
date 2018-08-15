@@ -18,6 +18,9 @@ async def on_ready():
 async def on_message(message):
     if message.content.lower().startswith('!youtube'):
         if message.channel.id == "474317552936288277":
+            await client.send_message(message.channel, "Hier gibt es Videos die dir gefallen könnten : https://goo.gl/8HUkBW")
+        for role in message.author.roles:
+            if role.name == "Discord Mod":                  
                 await client.send_message(message.channel, "Hier gibt es Videos die dir gefallen könnten : https://goo.gl/8HUkBW")  
         if message.channel.id != "474317552936288277":    
             await client.send_message(message.channel, "Commands bitte nur im <#474317552936288277> Channel eingeben!")
