@@ -20,7 +20,7 @@ async def on_message(message):
         if message.channel.id == "474317552936288277":
             await client.send_message(message.channel, "Hier gibt es Videos die dir gefallen könnten : https://goo.gl/8HUkBW")  
         if message.channel.id != "474317552936288277":    
-            await client.send_message(message.channel, "Commands bitte nur in diesem Channel eingeben: #bot ")
+            await client.send_message(message.channel, "Commands bitte nur in diesem Channel eingeben: #bot \s")
 #        for role in message.author.roles:
 #            if role.name == "Discord Mod":             
     if message.content.lower().startswith('!abo'):
