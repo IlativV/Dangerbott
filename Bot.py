@@ -16,7 +16,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.channel.id != "the channel id":
+    if message.channel.id != "474317552936288277":
         if message.content.lower().startswith('!youtube'):
             await client.send_message(message.channel, "Hier gibt es Videos die dir gefallen könnten : https://goo.gl/8HUkBW")
         if message.content.lower().startswith('!abo'):
