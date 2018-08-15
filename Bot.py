@@ -20,9 +20,8 @@ async def on_message(message):
         for role in message.author.roles:
             if role.name == "Discord Mod":
                 await client.send_message(message.channel, "Hier gibt es Videos die dir gefallen könnten : https://goo.gl/8HUkBW")
-        for channel in message.author.Channels:
-            if message.channel.id == "474317552936288277":
-                await client.send_message(message.channel, "Hier gibt es Videos die dir gefallen könnten : https://goo.gl/8HUkBW")               
+        if message.channel.id == "474317552936288277":
+            await client.send_message(message.channel, "Hier gibt es Videos die dir gefallen könnten : https://goo.gl/8HUkBW")               
     if message.content.lower().startswith('!abo'):
         await client.send_message(message.channel, "Noch kein Abonnent ? Hier kannst du mich abonnieren: https://goo.gl/kHwHVN")
     if message.content.lower().startswith('!server'):
