@@ -21,6 +21,7 @@ async def on_message(message):
             await client.delete_message(message)
             await client.send_message(message.channel, "Hier gibt es Videos die dir gefallen könnten : https://www.youtube.com/DangerZockt")  
         elif role.name == "Discord Mod":
+            await client.delete_message(message)
             await client.send_message(message.channel, "**Hier gibt es Videos die dir gefallen könnten : https://www.youtube.com/DangerZockt**")
         else:    
             await client.delete_message(message)
