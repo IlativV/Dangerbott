@@ -20,9 +20,7 @@ async def on_message(message):
         if message.channel.id == "474317552936288277":
             await client.delete_message(message)
             await client.send_message(message.channel, "Hier gibt es Videos die dir gefallen könnten : https://www.youtube.com/DangerZockt")  
-        elif: 
-            user = message.author
-            role = discord.utils.get(user.server.roles, id="396743590107283466")
+        elif utils.get(member.roles,name="Discord Mod") 
             await client.delete_message(message)
             await client.send_message(message.channel, "**Hier gibt es Videos die dir gefallen könnten : https://www.youtube.com/DangerZockt**")
         else:    
