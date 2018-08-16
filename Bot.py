@@ -18,14 +18,12 @@ async def on_ready():
 async def on_message(message):
     if message.content.lower().startswith('!youtube'):
         if message.channel.id == "474317552936288277":
-            await client.send_message(message.channel, "Hier gibt es Videos die dir gefallen könnten : https://goo.gl/8HUkBW")
+            await client.send_message(message.channel, "Hier gibt es Videos die dir gefallen könnten : www.youtube.de/dangerzockt")
         for role in message.author.roles:
             if role.name == "Discord Mod":                  
-                await client.send_message(message.channel, "Hier gibt es Videos die dir gefallen könnten : https://goo.gl/8HUkBW")  
-        else message.channel.id != "474317552936288277":   
-            await client.send_message(message.channel, "Commands bitte nur im <#474317552936288277> Channel eingeben!")
-#        for role in message.author.roles:
-#            if role.name == "Discord Mod":             
+                await client.send_message(message.channel, "Hier gibt es Videos die dir gefallen könnten : www.youtube.de/dangerzockt")  
+            else message.channel.id != "474317552936288277":   
+                await client.send_message(message.channel, "Commands bitte nur im <#474317552936288277> Channel eingeben!")           
     if message.content.lower().startswith('!abo'):
         await client.send_message(message.channel, "Noch kein Abonnent ? Hier kannst du mich abonnieren: https://goo.gl/kHwHVN")
     if message.content.lower().startswith('!server'):
@@ -33,15 +31,15 @@ async def on_message(message):
     if message.content.lower().startswith('!tp'):
         await client.send_message(message.channel, "Mit diesem Texture Pack spiele ich zurzeit: http://bdcraft.net")
     if message.content.lower().startswith('!trinkgeld'):
-        await client.send_message(message.channel, "Hier kannst du mir etwas Trinkgeld geben: https://goo.gl/g2N4Vb")
+        await client.send_message(message.channel, "Hier kannst du mir etwas Trinkgeld geben: https://www.tipeeestream.com/dangerzockt-lp/tip")
     if message.content.lower().startswith('!twitch'):
-        await client.send_message(message.channel, "Du schaust Livestreams lieber auf Twitch ? Hier ist der Link : https://goo.gl/5Kbc3m")
+        await client.send_message(message.channel, "Du schaust Livestreams lieber auf Twitch ? Hier ist der Link : https://www.twitch.tv/dangerzockt")
     if message.content.lower().startswith('!twitter'):
         await client.send_message(message.channel, "Hier ist meine Twitter Seite: https://twitter.com/DangerZockt")
     if message.content.lower().startswith('!uploadplan'):
         await client.send_message(message.channel, "Hier ist mein Uploadplan: https://goo.gl/eaJat8")
     if message.content.lower().startswith('!facebook'):
-        await client.send_message(message.channel, "Hier ist meine Facebook Seite: https://goo.gl/35VuhR")
+        await client.send_message(message.channel, "Hier ist meine Facebook Seite: https://www.facebook.com/DangerZockt")
     if message.content.lower().startswith('!premium'):
         await client.send_message(message.channel, "Wenn du diesen Command `/geworben Y8DEEH70` auf dem UnicaCity Server eingibst, bekommst du 14 Tage Premium (auf UnicaCity) nachdem du Level 10 auf dem Server erreicht hast.")      
     if message.content.lower().startswith('!commands'):
