@@ -53,7 +53,7 @@ async def on_message(message):
     if message.content.lower().startswith('!tippspiel'):
         await client.send_message(message.channel, "Bundesliga Tippspiel 2018/19 - trete der Dangerliga bei! https://dangerliga.webtippspiel.net")                                                
     if message.content.lower().startswith('!instagram'):
-        await client.send_message(message.channel, "Hier ist meine Instagramm Account: https://www.instagram.com/dangerzockt")
+        await client.send_message(message.channel, "Hier ist mein Instagram Account: https://www.instagram.com/dangerzockt")
     
     
 @client.async_event
