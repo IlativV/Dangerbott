@@ -82,7 +82,7 @@ async def on_message(message):
                                         "*Noch kein Abonnent? Hier kannst du mich abonnieren: https://goo.gl/kHwHVN*")
             if message.content.lower().startswith('!server'):
                 await client.send_message(message.channel,
-                                        "*Auf diesem Minecraft Server spiele ich gerade: https://unicacity.de Auf den Server kommst du mit der 1.12 Version der Java Edition*")
+                                        "*Auf diesem Minecraft Server spiele ich zurzeit: https://unicacity.de Auf den Server kommst du mit der 1.12 Version der Java Edition*")
             if message.content.lower().startswith('!tp'):
                 await client.send_message(message.channel,
                                         "*Mit diesem Texture Pack spiele ich zurzeit: http://bdcraft.net*")
