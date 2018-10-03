@@ -16,6 +16,7 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if message.content.lower().startswith('!'):
+        await client.delete_message(message)
         if message.channel.id == "474317552936288277":
 
             if message.content.lower().startswith('!abo'):
