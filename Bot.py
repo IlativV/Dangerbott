@@ -13,15 +13,10 @@ async def on_ready():
     print('ist jetzt aktiv!')
     print('----------------')
 
-
 @client.event
 async def on_message(message):
     if message.content.lower().startswith('!'):
-
-        await client.delete_message(message)
-
         if message.channel.id == "474317552936288277":
-
 
             if message.content.lower().startswith('!abo'):
                 await client.send_message(message.channel,
@@ -71,9 +66,6 @@ async def on_message(message):
             else:
                 await client.send_message(message.channel,
                                         "Den Command gibt es nicht!")
-
-
-
 
         elif message.author.id == "234379486580178954" or "303343324767715328" or "287861614353448961" :
 
@@ -127,11 +119,15 @@ async def on_message(message):
             await client.send_message(message.channel,
                                       "Commands bitte nur im <#474317552936288277> Channel eingeben!")
 
-    
+@client.event
+async def on_message(message):
+    if message.channel.id == '474317552936288277' or '478560342553788427':
+        await asyncio.sleep(300)
+        await client.delete_message(message)
+
 @client.async_event
 async def on_member_join(member):
     role = discord.utils.get(member.server.roles, id="397010173513826306")
     await client.add_roles(member, role)
-
 
 client.run(os.getenv('TOKEN'))
