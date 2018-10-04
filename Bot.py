@@ -123,7 +123,7 @@ async def on_message(message):
 @client.event
 async def on_message(message):
     if message.channel.id == "474317552936288277" :
-        await asyncio.sleep(300)
+        await asyncio.sleep(60)
         await client.delete_message(message)
 
 @client.async_event
